@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Access Rights Requisition</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1 class="title">Access Rights Requisition</h1>
+    <div class="options">
+      <label for="userOptions">Options:</label>
+      <select id="userOptions">
+        <option value="Mahsa">Mahsa</option>
+        <option value="All">All</option>
+        <option value="Others">Others</option>
+      </select>
+    </div>
+    <div class="checkboxes">
+      <label><input type="checkbox" name="accessType" value="new"> New</label>
+      <label><input type="checkbox" name="accessType" value="change"> Change</label>
+      <label><input type="checkbox" name="accessType" value="block"> Block</label>
+    </div>
+    <div class="form-group">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name">
+    </div>
+    <div class="form-group">
+      <label for="designation">Designation:</label>
+      <input type="text" id="designation" name="designation">
+    </div>
+    <div class="form-group">
+      <label for="effectiveDate">Effective Date:</label>
+      <input type="date" id="effectiveDate" name="effectiveDate">
+    </div>
+    <div class="form-group">
+      <label for="effectiveUntil">Effective Until:</label>
+      <input type="date" id="effectiveUntil" name="effectiveUntil">
+    </div>
+    <div class="form-group">
+      <label for="department">Department:</label>
+      <input type="text" id="department" name="department">
+    </div>
+    <table>
+      <thead>
+        <tr>
+          <th>No.</th>
+          <th>ID Creation</th>
+          <th>Yes/No</th>
+          <th>Remark</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td>Heathcare</td>
+          <td><input type="checkbox" name="heathcareAccess">Yes<input type="checkbox" name="heathcareAccess">No
+          </td>
+          <td><input type="text" name="heathcareRemark"></td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>Outlook</td>
+          <td><input type="checkbox" name="outlookAccess">Yes<input type="checkbox" name="heathcareAccess">No
+          </td>
+          <td><input type="text" name="outlookRemark"></td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>Domain</td>
+          <td><input type="checkbox" name="domainAccess">Yes<input type="checkbox" name="heathcareAccess">No</td>
+          <td><input type="text" name="domainRemark"></td>
+        </tr>
+        <tr>
+          <td>4</td>
+          <td>VPN</td>
+          <td><input type="checkbox" name="vpnAccess">Yes<input type="checkbox" name="heathcareAccess">No</td>
+          <td><input type="text" name="vpnRemark"></td>
+        </tr>
+      </tbody>
+    </table>
+    <div class="form-group">
+      <label for="remarks">Remarks (for IT Department):</label>
+      <textarea id="remarks" name="remarks"></textarea>
+    </div>
+    <div class="form-group">
+      <label for="requestedBy">Requested By:</label>
+      <input type="text" id="requestedBy" name="requestedBy">
+    </div>
+    <div class="form-group">
+      <label for="requestedByName">Name:</label>
+      <input type="text" id="requestedByName" name="requestedByName">
+    </div>
+    <div class="form-group">
+      <label for="requestDate">Date:</label>
+      <input type="date" id="requestDate" name="requestDate">
+    </div>
+
+    <div class="form-group">
+      <button id="approvalButton">Approve</button>
+    </div>
+  </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
